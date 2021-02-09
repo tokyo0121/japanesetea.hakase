@@ -1,0 +1,25 @@
+.title{
+  text-align: center;
+  font-size: 30px;
+}
+
+.start a{
+  background: #086011;
+  display: block;
+  color: #fff;
+  text-align: center;
+  width:100%;
+  max-width:70px;
+  margin:0 auto 5px auto;
+  padding:13px 23px;
+  border-radius: 10px;
+  transition: background 1s;
+}
+
+.start :hover{
+  background: rgba(44, 173, 41, 0.66);
+}
+
+.resulty{
+  text-align: center;
+}
