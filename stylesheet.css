@@ -1,5 +1,6 @@
 body{
-  background:rgba(200,200,200,.5);
+  color: #086011;
+  background:rgba(132, 213, 133, 0.57);
 }
 .cf:after {
     content:" ";
@@ -12,7 +13,7 @@ body{
   height:320px;
   text-align: center;
   margin:0 auto;
-  background:rgba(200,200,200,.3);
+  background:rgba(44, 173, 41, 0.66);
   padding:20px 20px;
   display: table;
   overflow:hidden;
@@ -28,6 +29,7 @@ body{
 
 }
 .result{
+  width: 100%;
   display:none;
   vertical-align:middle;
   opacity:0;
@@ -52,6 +54,10 @@ body{
   padding:50px 20px;
   border-radius: 10px;
   border:1px solid #CCC;
+  box-sizing: border-box;
+}
+.result_inner p{
+  font-size: 20px;
 }
 .que.active{
   display:table-cell;
@@ -85,7 +91,7 @@ body{
 .btn{
   display: inline-block;
   border-radius:5px;
-  border:1px solid #000;
+  border:1px solid #086011;
   margin:10px 5px;
 }
 .btn label{
@@ -125,4 +131,10 @@ body{
 }
 .btn input{
   display: none;
+}
+
+.next{
+  background: #086011;
+  color: #fff;
+  display: block;
 }
