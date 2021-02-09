@@ -1,0 +1,128 @@
+body{
+  background:rgba(200,200,200,.5);
+}
+.cf:after {
+    content:" ";
+    display:block;
+    clear:both;
+}
+.wrap{
+  width:100%;
+  max-width:600px;
+  height:320px;
+  text-align: center;
+  margin:0 auto;
+  background:rgba(200,200,200,.3);
+  padding:20px 20px;
+  display: table;
+  overflow:hidden;
+  box-sizing: border-box;
+
+}
+.que{
+  width:100%;
+  display:none;
+  vertical-align:middle;
+  opacity:0;
+  transition: all .4s ease;
+
+}
+.result{
+  display:none;
+  vertical-align:middle;
+  opacity:0;
+  transition: all .4s ease;
+}
+.result.active{
+  display:table-cell;
+  transform:translate3d(100%,0,0)
+}
+.result.active.open{
+  opacity:1;
+  transform:translate3d(0,0,0)
+}
+.result.active.close{
+  transform:translate3d(-100%,0,0)
+}
+.result_inner{
+  text-align: center;
+  width:100%;
+  max-width:400px;
+  margin:0 auto 20px auto;
+  padding:50px 20px;
+  border-radius: 10px;
+  border:1px solid #CCC;
+}
+.que.active{
+  display:table-cell;
+  transform:translate3d(100%,0,0)
+}
+.que.active.open{
+  opacity:1;
+  transform:translate3d(0,0,0)
+}
+.que.active.close{
+  transform:translate3d(-100%,0,0)
+}
+.que_inner{
+  text-align: left;
+  width:100%;
+  max-width:400px;
+  margin:0 auto 20px auto;
+  padding:50px 20px;
+  border-radius: 10px;
+  border:1px solid #CCC;
+  box-sizing: border-box;
+}
+.txt{
+  margin-bottom: 30px;
+  padding:0 0 10px 0;
+}
+.btnArea{
+  text-align: center;
+  margin-bottom: 40px;
+}
+.btn{
+  display: inline-block;
+  border-radius:5px;
+  border:1px solid #000;
+  margin:10px 5px;
+}
+.btn label{
+  cursor:pointer;
+  width:80%;
+  height:100%;
+  min-width:120px;
+  padding:10px;
+  display: block;
+}
+.btn:first-child{
+   margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+.btn:first-child{
+   margin-right: 20px;
+  margin-bottom: 0;
+}
+}
+
+.btn .radio:before{
+  content:"";
+  display: inline-block;
+  width:13px;
+  height:13px;
+  border-radius:50%;
+  background:#CCC;
+  margin-right: 10px;
+  box-sizing: border-box;
+}
+ .btn input:checked + .radio:before{
+  border:3px solid #CCC;
+   width:13px;
+   height:13px;
+   background:#333;
+
+}
+.btn input{
+  display: none;
+}
